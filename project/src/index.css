@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ───────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #0e0c0a;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+
+/* ── Hero orange gradient text ──────────────────────────────────────────────── */
+.hero-orange {
+  background: linear-gradient(90deg, #f97316 0%, #fb923c 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Dark feature card ──────────────────────────────────────────────────────── */
+.card-dark {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.card-dark:hover {
+  border-color: rgba(249, 115, 22, 0.25);
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar              { width: 5px; }
+::-webkit-scrollbar-track        { background: rgba(14, 12, 10, 0.8); }
+::-webkit-scrollbar-thumb        { background: rgba(249, 115, 22, 0.35); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover  { background: rgba(249, 115, 22, 0.6); }

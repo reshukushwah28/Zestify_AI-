@@ -2,6 +2,7 @@
 
 🚀 **Live Deployment:** [ur-zestify-ai.netlify.app](https://ur-zestify-ai.netlify.app/)
 
+![Zestify AI Architecture](./zestify_architecture.png)
 ---
 
 ## 💡 The Philosophy: AI is a Tool, Not a Replacement
